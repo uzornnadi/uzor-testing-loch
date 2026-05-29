@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lochquarry Outdoor Centre</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="top-bar">
+                <img src="lochquarry_logo.png" alt="lochquarry logo"  class="logo">
+                
+                <div class="title-nav">
+                    <nav>
+                        <ul>      
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="land.html"> Land</a></li>
+                            <li><a href="rope.html"> Rope</a></li>
+                            <li><a href="water.html"> Water</a></li>
+                            <li><a href="about_us.html"> About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+                <img src="lochquarry_banner.png" alt="lochquarry banner" class="banner">
+        </header>
+
+    
+    <main>
+        <section>
+            <h1>Welcome to Lochquarry Outdoor Centre</h1>
+            <h2>About Lochquarry</h2>
+            <p>Lochquarry Outdoor Centre is set in acres of land in the heart of the majestic Argyll hills. On our doorstep is not only magnificent scenery, but also a breath-taking selection of outdoor and adventurous activities.</p>
+            <p>With activities designed to meet the needs of all ages and experiences of young people, Lochquarry truly brings adventure to everyone.</p>
+            <p>Our activities are very popular with youth groups including Scouts and Guides.</p>
+                   
+            <h2>Our Activities Includes;</h2>
+            <p><b>Land-based Activities:</b> Archery, Axe throwing, Hillwalking and Orienteering</p>
+            <p><b>Water-based Activities:</b> Canoeing, Kayaking and Powerboating</p>
+            <p><b>Rope-based Activitties:</b> Abseiling, Climbing and Pole climbing.</p>
+                           
+
+            <img src="nature/nature_1.jpg" alt="Beautiful Argyll Forest" class="nature-img">
+            
+        
+
+                <div class="chart-wrapper">
+                <canvas id="myChart"></canvas>
+                </div>
+        
+        <div class="review-section">
+            <blockquote>
+        <p style="color:#FF0000;"><i>We had a great time and loved all the different activities that we did - 8th Gourock Guides</i></p>
+        </blockquote>
+            </div>
+        
+        </section>
+    </main>  
+
+        <footer>
+        <p>To book for any activity, please call us on 01475 229 8311</p>
+        <p>© Lochquarry Outdoor Centre. ALL RIGHTS RESERVED</p>
+        </footer>
+
+                
+        <script>
+            const canvas = document.getElementById('myChart');
+            const context = canvas.getContext('2d');
+            const myChart = new Chart(context, {
+            type: 'pie',
+            data: {
+            labels: ['Land', 'Rope', 'Water'],
+            datasets: [{
+            label: 'Daily Bookings',
+            data: [44, 26, 19],
+            backgroundColor: ['red', 'blue', 'yellow']
+            }]
+            }
+            });
+        </script>
+        
+</body>
+</html>
+

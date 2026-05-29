@@ -1,0 +1,21 @@
+.aboutus-card {
+display: flex;
+align-items: left;
+margin-bottom: 20px;
+gap: 30px;
+background-color: lightblue;
+padding: 20px;
+border-radius:10px;
+}
+
+.aboutus-img{
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px;
+    border: 5px light black;
+}
+
+.aboutus-info {
+    flex:1;
+}
